@@ -19,7 +19,7 @@ This script is used under the terms of its original license (CC BY-NC 4.0) for n
 
 ### Note to Users
 
-While the rest of our project is licensed under the MIT License, please be aware that the `model_vit.py` file retains its original CC BY-NC 4.0 license. This means that any use of this file, whether as part of this project or independently, should adhere to the non-commercial condition and other terms set forth by the CC BY-NC 4.0 license.
+While the rest of our project is licensed under the GPL-3.0 License, please be aware that the `model_vit.py` file retains its original CC BY-NC 4.0 license. This means that any use of this file, whether as part of this project or independently, should adhere to the non-commercial condition and other terms set forth by the CC BY-NC 4.0 license.
 
 Users are responsible for ensuring their use of the `model_vit.py` script complies with the CC BY-NC 4.0 license terms. This includes, but is not limited to, providing appropriate attribution if the script or derivatives of it are shared, and not using the script for commercial purposes.
 
