@@ -15,7 +15,7 @@ The `model_vit.py` script is provided under the CC BY-NC 4.0 license, which allo
 
 ### Usage in This Project
 
-This script is used under the terms of its original license (CC BY-NC 4.0) for non-commercial purposes. It is integral to our project's feature extraction process but is kept separate from the main body of our project, which is licensed under the MIT License.
+This script is used under the terms of its original license (CC BY-NC 4.0) for non-commercial purposes. It is integral to our project's feature extraction process but is kept separate from the main body of our project, which is licensed under the GPL-3.0 License.
 
 ### Note to Users
 
