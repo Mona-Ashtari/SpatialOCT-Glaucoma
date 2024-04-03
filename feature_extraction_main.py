@@ -9,7 +9,7 @@ import numpy as np
 import os
 import torch
 import torch.backends.cudnn as cudnn
-from pos_embed import interpolate_pos_embed
+from utils.pos_embed import interpolate_pos_embed
 from vit_model import models_vit
 
 from utils.OCT_dataset import OCT_Dataset
