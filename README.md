@@ -34,7 +34,7 @@ project/
 ├── RETFound_oct_weights.pth
 │
 └── split_index.pickle # Indices for cross-validation
-"""
+```
 
 ## Setup
 ### Data Preparation
