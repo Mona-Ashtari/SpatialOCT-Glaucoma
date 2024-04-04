@@ -45,17 +45,23 @@ project/
 
 ## Usage
 To run the feature extraction script, navigate to the project directory and execute:
+```
 python feature_extraction_main.py
+```
 
 To perform RNN sequential processing, run:
+```
 python RNN_main.py
+```
 
 ## Citation
 If you use this repository for your research, please cite our paper:
+```
 @article{ashtari2024spatial,
   title={Spatial-aware Transformer-GRU Framework for Enhanced Glaucoma Diagnosis from 3D OCT Imaging},
   author={Ashtari-Majlan, Mona and Dehshibi, Mohammad Mahdi and Masip, David},
   journal={arXiv preprint arXiv:2403.05702},
   year={2024}
 }
+```
 
