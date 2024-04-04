@@ -5,7 +5,6 @@ This repository contains the implementation of the paper entitled "Spatial-aware
 Please contact ashtari.mona@gmail.com for further information.
 
 ## Project Structure
-"""
 ```plaintext
 project/
 │
@@ -35,7 +34,7 @@ project/
 ├── RETFound_oct_weights.pth
 │
 └── split_index.pickle # Indices for cross-validation
-'''
+"""
 
 ## Setup
 ### Data Preparation
