@@ -2,10 +2,10 @@
 
 This repository contains the implementation of the paper entitled "Spatial-aware Transformer-GRU Framework for Enhanced Glaucoma Diagnosis from 3D OCT Imaging." The paper is available on arXiv: [https://arxiv.org/abs/2403.05702](https://arxiv.org/abs/2403.05702).
 
-Please contact [ashtari.mona@gmail.com] for further information.
+Please contact ashtari.mona@gmail.com for further information.
 
 ## Project Structure
-project_structure_md = """
+"""
 ```plaintext
 project/
 │
@@ -35,6 +35,7 @@ project/
 ├── RETFound_oct_weights.pth
 │
 └── split_index.pickle # Indices for cross-validation
+'''
 
 ## Setup
 ### Data Preparation
