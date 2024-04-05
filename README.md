@@ -23,7 +23,7 @@ project/
 
 ## Setup
 ### Data Preparation
-1. Download the OCT dataset from [Zenodo](https://zenodo.org/records/1481223) and extract it.
+1. Download the OCT dataset from [here](https://zenodo.org/records/1481223) and extract it.
 2. Separate the data into two classes and place them into the `OCT_data/class0` and `OCT_data/class1` folders.
 3. Download the pre-trained RETFound weights on OCT data from [Google Drive](https://drive.google.com/file/d/1m6s7QYkjyjJDlpEuXm7Xp3PmjN-elfW2/view?usp=sharing) and place it in the project folder.
 
