@@ -29,12 +29,12 @@ project/
 
 
 ## Usage
-3. To run the feature extraction script, navigate to the project directory and execute:
+3. Navigate to the project directory and execute the feature extraction script:
 ```
 python feature_extraction_main.py
 ```
 
-4. To perform RNN sequential processing, run:
+4. Execute the RNN sequential processing:
 ```
 python RNN_main.py
 ```
