@@ -22,7 +22,7 @@ project/
 ```
 
 ## Setup
-1. Download the RETFound pre-trained weights for OCT data from [RETFound_MAE GitHub](https://github.com/rmaphoh/RETFound_MAE) and place it in the project folder.
+1. Download the RETFound pre-trained weights for OCT data from [RETFound_MAE](https://github.com/rmaphoh/RETFound_MAE) GitHub and place it in the project folder.
 
 2. Download the OCT dataset from [here](https://zenodo.org/records/1481223) and extract it.
    Separate the data into two classes and place them into the `OCT_data/class0` and `OCT_data/class1` folders.
