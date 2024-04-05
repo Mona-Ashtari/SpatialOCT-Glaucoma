@@ -22,19 +22,19 @@ project/
 ```
 
 ## Setup
-### Data Preparation
-1. Download the OCT dataset from [here](https://zenodo.org/records/1481223) and extract it.
-2. Separate the data into two classes and place them into the `OCT_data/class0` and `OCT_data/class1` folders.
-3. Download the pre-trained RETFound weights on OCT data from [Google Drive](https://drive.google.com/file/d/1m6s7QYkjyjJDlpEuXm7Xp3PmjN-elfW2/view?usp=sharing) and place it in the project folder.
+1. Download the RETFound pre-trained weights for OCT data from [RETFound_MAE GitHub](https://github.com/rmaphoh/RETFound_MAE) and place it in the project folder.
+
+2. Download the OCT dataset from [here](https://zenodo.org/records/1481223) and extract it.
+   Separate the data into two classes and place them into the `OCT_data/class0` and `OCT_data/class1` folders.
 
 
 ## Usage
-To run the feature extraction script, navigate to the project directory and execute:
+3. To run the feature extraction script, navigate to the project directory and execute:
 ```
 python feature_extraction_main.py
 ```
 
-To perform RNN sequential processing, run:
+4. To perform RNN sequential processing, run:
 ```
 python RNN_main.py
 ```
