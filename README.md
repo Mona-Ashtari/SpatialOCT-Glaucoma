@@ -9,7 +9,7 @@ Please contact ashtari.mona@gmail.com for further information.
 project/
 │
 ├── OCT_data/
-│   └── class0
+│   ├── class0
 │   └── class1
 │
 ├── RNN_main.py # Main script for RNN sequential processing
