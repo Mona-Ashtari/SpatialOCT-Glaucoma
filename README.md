@@ -1,6 +1,6 @@
 # SpatialOCT-Glaucoma
 
-This repository contains the implementation of the paper entitled ["Spatial-aware Transformer-GRU Framework for Enhanced Glaucoma Diagnosis from 3D OCT Imaging."](https://arxiv.org/abs/2403.05702).
+This repository contains the implementation of the paper entitled ["Spatial-aware Transformer-GRU Framework for Enhanced Glaucoma Diagnosis from 3D OCT Imaging."](https://arxiv.org/abs/2403.05702)
 
 Please contact ashtari.mona@gmail.com for further information.
 
