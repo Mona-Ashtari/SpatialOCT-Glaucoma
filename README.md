@@ -7,25 +7,9 @@ Please contact ashtari.mona@gmail.com for further information.
 ## Project Structure
 ```plaintext
 project/
-│
-├── models/
-│   └── RNN_model.py
-│
-├── vit_model/
-│   └── models_vit.py
-│
 ├── OCT_data/
 │   └── class0
 │   └── class1
-│
-├── utils/
-│   ├── OCT_dataset.py
-│   ├── data_preparation.py
-│   ├── evaluation.py
-│   ├── feature_dataset.py
-│   ├── pos_embed.py
-│   ├── train.py
-│   └── utils.py
 │
 ├── RNN_main.py # Main script for RNN sequential processing
 │
