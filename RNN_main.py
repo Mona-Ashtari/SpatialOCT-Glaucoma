@@ -6,7 +6,6 @@ for Glaucoma detection.
 Project: SpatialOCT-Glaucoma
 """
 
-import shutil
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader, WeightedRandomSampler
