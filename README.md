@@ -8,9 +8,7 @@ Please contact ashtari.mona@gmail.com for further information.
 ```plaintext
 project/
 │
-├── OCT_data/
-│   ├── class0
-│   └── class1
+├── OCT_data
 │
 ├── RNN_main.py # Main script for RNN sequential processing
 │
@@ -24,9 +22,7 @@ project/
 ## Setup
 1. Download the RETFound pre-trained weights for OCT data from [RETFound_MAE](https://github.com/rmaphoh/RETFound_MAE) GitHub and place it in the project folder.
 
-2. Download the 3D OCT dataset from [here](https://zenodo.org/records/1481223) and extract it.
-   Separate the data into two classes and place them into the `OCT_data/class0` and `OCT_data/class1` folders.
-
+2. Download the 3D OCT dataset from [here](https://zenodo.org/records/1481223) and extract it. Place the extracted images into the OCT_data folder.
 
 ## Usage
 3. Navigate to the project directory and execute the feature extraction script:
