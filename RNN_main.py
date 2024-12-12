@@ -6,6 +6,7 @@ for Glaucoma detection.
 Project: SpatialOCT-Glaucoma
 """
 
+import shutil
 import torch
 import torch.optim as optim
 from torch.utils.data import DataLoader, WeightedRandomSampler
@@ -29,15 +30,17 @@ from utils.data_preparation import cross_validation_indices
 def main():
 
     # Set hyperparameters
-    num_epochs = 2
-    batch_size = 32
+    num_epochs = 100
+    batch_size = 16
     num_classes = 2
     learning_rate = 0.0001
     alpha = 0.3
     gamma = 2
     num_folds = 5
-    hidden_dim = 256
-
+    hidden_dim1 = 256
+    hidden_dim2 = 128
+    input_dim = 1024
+    drop_rate = 0.3
     data_path = 'OCT_features'
     ckpn_path = ''
     mont_uncertainty = False
@@ -46,7 +49,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     # Split data for cross-validation
-    # indexes = cross_validation_indices(data_path, num_folds)
+    # indexes = cross_validation_indices(raw_img_path, num_folds)
     with open('split_index.pickle', 'rb') as f:
         indexes = pickle.load(f)
 
@@ -55,10 +58,8 @@ def main():
 
     # Cross-validation loop
     for fold in range(num_folds):
-
         train_losses = []
         train_accs = []
-
         val_losses = []
         val_accs = []
         val_confmat_log = []
@@ -69,9 +70,11 @@ def main():
         counter = 0
 
         # Instantiate the model, loss function, and optimizer
-        gru_model = GRU_model(input_dim=1024,
-                              hidden_dim=hidden_dim,
-                              num_classes=num_classes
+        gru_model = GRU_model(input_dim=input_dim,
+                              hidden_dim1=hidden_dim1,
+                              hidden_dim2=hidden_dim2,
+                              num_classes=num_classes,
+                              drop_rate=drop_rate
                               ).to(device)
 
         optimizer = optim.Adam(gru_model.parameters(), lr=learning_rate)
@@ -86,9 +89,9 @@ def main():
         criterion = sigmoid_focal_loss
 
         # Dataset folding
-        dataset_train = FeatureDataset(data_path, [indexes[0][fold], indexes[3][fold]])
-        dataset_val = FeatureDataset(data_path, [indexes[1][fold], indexes[4][fold]])
-        dataset_test = FeatureDataset(data_path, [indexes[2][fold], indexes[5][fold]])
+        dataset_train = FeatureDataset(data_path, indexes[0][f'fold{fold}'])
+        dataset_test = FeatureDataset(data_path, indexes[1][f'fold{fold}'])
+        dataset_val = FeatureDataset(data_path, indexes[2][f'fold{fold}'])
 
         # train data loader and sampler
         sample_weights = calculate_sample_weights(dataset_train)
@@ -219,10 +222,9 @@ def main():
         # plt.legend(loc="lower right")
         # plt.show()
 
-    with open('results5folds.pickle', 'wb') as handle:
+    with open(f'results5folds.pickle', 'wb') as handle:
         pickle.dump(results, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
 
 if __name__ == "__main__":
     main()
-
