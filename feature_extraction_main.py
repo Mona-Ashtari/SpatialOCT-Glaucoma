@@ -13,7 +13,7 @@ import torch
 import torch.backends.cudnn as cudnn
 import timm
 from utils.pos_embed import interpolate_pos_embed
-from models.vit_model import models_vit
+from models import models_vit
 from utils.OCT_dataset import OCT_Dataset
 import pickle
 
